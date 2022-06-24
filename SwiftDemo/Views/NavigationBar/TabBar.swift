@@ -9,12 +9,20 @@ import SwiftUI
 
 struct TabBar: View {
     var body: some View {
-//        TabView {
-//            CircleImage().tabItem {
-//                NavigationLink(destination: <#T##() -> _#>, label: <#T##() -> _#>)
-//            }
-//        }
-        Text("qwewq")
+        TabView {
+            MapView().tabItem {
+                NavigationLink(destination: MapView()) {
+                    Image(systemName: "car")
+                    Text("MapView")}.tag(1)
+            }
+            ListItem().tabItem {
+                NavigationLink(destination: ListItem()) {
+                    Image(systemName: "car")
+                    Text("ListView1").tag(2)
+                }
+            }
+        }
+
     }
 }
 

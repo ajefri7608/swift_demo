@@ -16,6 +16,7 @@ struct ListItem: View {
         animation: .default)
     private var items: FetchedResults<Item>
     var body: some View {
+
         List {
             ForEach(items) { item in
                 NavigationLink {
@@ -36,7 +37,7 @@ struct ListItem: View {
                 }
             }
         }
-        Text("Select an item")
+
     }
     private func addItem() {
         withAnimation {

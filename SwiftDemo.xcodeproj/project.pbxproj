@@ -47,6 +47,7 @@
 		0E7AAD9D2865A7E6002AA345 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0E7AADA32865C112002AA345 /* MapPage */,
 				0E7AAD9E2865A8FC002AA345 /* NavigationBar */,
 				0E7AADA12865B519002AA345 /* ListItem.swift */,
 			);
@@ -59,6 +60,15 @@
 				0E7AAD9F2865A935002AA345 /* TabBar.swift */,
 			);
 			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		0E7AADA32865C112002AA345 /* MapPage */ = {
+			isa = PBXGroup;
+			children = (
+				0E7AAD9B28659195002AA345 /* MapView.swift */,
+				0E7AAD99286565BB002AA345 /* CircleImage.swift */,
+			);
+			path = MapPage;
 			sourceTree = "<group>";
 		};
 		0EF4EE95284DB7DC0003C60D = {
@@ -84,8 +94,6 @@
 				0EF4EEA1284DB7DD0003C60D /* SwiftDemoApp.swift */,
 				0EF4EEA3284DB7DD0003C60D /* ContentView.swift */,
 				0EF4EEA5284DB7E10003C60D /* Assets.xcassets */,
-				0E7AAD99286565BB002AA345 /* CircleImage.swift */,
-				0E7AAD9B28659195002AA345 /* MapView.swift */,
 				0EF4EEAA284DB7E10003C60D /* Persistence.swift */,
 				0EF4EEAC284DB7E10003C60D /* SwiftDemo.xcdatamodeld */,
 				0EF4EEA7284DB7E10003C60D /* Preview Content */,
