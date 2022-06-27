@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E06FB00286999B30072588D /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06FAFF286999B30072588D /* LoginPage.swift */; };
 		0E7AAD9A286565BB002AA345 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7AAD99286565BB002AA345 /* CircleImage.swift */; };
 		0E7AAD9C28659195002AA345 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7AAD9B28659195002AA345 /* MapView.swift */; };
 		0E7AADA02865A935002AA345 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7AAD9F2865A935002AA345 /* TabBar.swift */; };
 		0E7AADA22865B519002AA345 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7AADA12865B519002AA345 /* ListItem.swift */; };
+		0E7AADA628694A67002AA345 /* LoginBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7AADA528694A67002AA345 /* LoginBox.swift */; };
 		0EF4EEA2284DB7DD0003C60D /* SwiftDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4EEA1284DB7DD0003C60D /* SwiftDemoApp.swift */; };
 		0EF4EEA4284DB7DD0003C60D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4EEA3284DB7DD0003C60D /* ContentView.swift */; };
 		0EF4EEA6284DB7E10003C60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF4EEA5284DB7E10003C60D /* Assets.xcassets */; };
@@ -20,10 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E06FAFF286999B30072588D /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		0E7AAD99286565BB002AA345 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		0E7AAD9B28659195002AA345 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0E7AAD9F2865A935002AA345 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0E7AADA12865B519002AA345 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		0E7AADA528694A67002AA345 /* LoginBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBox.swift; sourceTree = "<group>"; };
 		0EF4EE9E284DB7DD0003C60D /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF4EEA1284DB7DD0003C60D /* SwiftDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoApp.swift; sourceTree = "<group>"; };
 		0EF4EEA3284DB7DD0003C60D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 		0E7AAD9D2865A7E6002AA345 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0E7AADA428694A3C002AA345 /* LoginPage */,
 				0E7AADA32865C112002AA345 /* MapPage */,
 				0E7AAD9E2865A8FC002AA345 /* NavigationBar */,
 				0E7AADA12865B519002AA345 /* ListItem.swift */,
@@ -69,6 +74,15 @@
 				0E7AAD99286565BB002AA345 /* CircleImage.swift */,
 			);
 			path = MapPage;
+			sourceTree = "<group>";
+		};
+		0E7AADA428694A3C002AA345 /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				0E7AADA528694A67002AA345 /* LoginBox.swift */,
+				0E06FAFF286999B30072588D /* LoginPage.swift */,
+			);
+			path = LoginPage;
 			sourceTree = "<group>";
 		};
 		0EF4EE95284DB7DC0003C60D = {
@@ -181,11 +195,13 @@
 			files = (
 				0E7AADA02865A935002AA345 /* TabBar.swift in Sources */,
 				0EF4EEAE284DB7E10003C60D /* SwiftDemo.xcdatamodeld in Sources */,
+				0E7AADA628694A67002AA345 /* LoginBox.swift in Sources */,
 				0E7AAD9C28659195002AA345 /* MapView.swift in Sources */,
 				0EF4EEAB284DB7E10003C60D /* Persistence.swift in Sources */,
 				0E7AADA22865B519002AA345 /* ListItem.swift in Sources */,
 				0EF4EEA4284DB7DD0003C60D /* ContentView.swift in Sources */,
 				0EF4EEA2284DB7DD0003C60D /* SwiftDemoApp.swift in Sources */,
+				0E06FB00286999B30072588D /* LoginPage.swift in Sources */,
 				0E7AAD9A286565BB002AA345 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

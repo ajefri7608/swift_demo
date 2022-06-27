@@ -10,17 +10,26 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
         TabView {
+            LoginPage().tabItem({
+                NavigationLink(destination: LoginPage()) {
+                    Image(systemName: "person")
+                    Text("Login").tag(3)
+                    
+                }
+            })
             MapView().tabItem {
                 NavigationLink(destination: MapView()) {
-                    Image(systemName: "car")
+                    Image(systemName: "map")
+                        
                     Text("MapView")}.tag(1)
             }
             ListItem().tabItem {
                 NavigationLink(destination: ListItem()) {
-                    Image(systemName: "car")
+                    Image(systemName: "list.bullet.indent")
                     Text("ListView1").tag(2)
                 }
             }
+
         }
 
     }
