@@ -1,0 +1,6 @@
+framework module Pods_SwiftDemo_PROD {
+  umbrella header "Pods-SwiftDemo PROD-umbrella.h"
+
+  export *
+  module * { export * }
+}
