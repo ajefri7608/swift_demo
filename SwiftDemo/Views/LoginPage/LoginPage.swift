@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoginPage: View {
+    
     var body: some View {
         ZStack {
 
@@ -15,7 +16,7 @@ struct LoginPage: View {
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 24){
-                CircleImage()
+                CircleImage(image:Image("circleTest"))
                 LoginBox()
                 Text(environmentDisplay())
             }

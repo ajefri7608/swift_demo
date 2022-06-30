@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabBar: View {
+
     var body: some View {
         TabView {
             LoginPage().tabItem({
@@ -17,16 +18,11 @@ struct TabBar: View {
                     
                 }
             })
-            MapView().tabItem {
-                NavigationLink(destination: MapView()) {
-                    Image(systemName: "map")
-                        
-                    Text("MapView")}.tag(1)
-            }
-            ListItem().tabItem {
-                NavigationLink(destination: ListItem()) {
+
+            LandmarkList(modelData: ModelData()).tabItem {
+                NavigationLink(destination: LandmarkList(modelData: ModelData())) {
                     Image(systemName: "list.bullet.indent")
-                    Text("ListView1").tag(2)
+                    Text("LandmarkList").tag(2)
                 }
             }
 
@@ -35,8 +31,8 @@ struct TabBar: View {
     }
 }
 
-struct TabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBar()
-    }
-}
+//struct TabBar_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TabBar()
+//    }
+//}
