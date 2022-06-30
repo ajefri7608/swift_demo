@@ -17,9 +17,19 @@ struct LoginPage: View {
             VStack(spacing: 24){
                 CircleImage()
                 LoginBox()
+                Text(environmentDisplay())
             }
             .padding()
         }
+    }
+    func environmentDisplay() -> String {
+        var test = ""
+        #if UAT || SIT
+        test = "UAT"
+        #else
+        test = "PROD"
+        #endif
+        return test
     }
 }
 
